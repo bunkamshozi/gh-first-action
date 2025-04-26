@@ -1,0 +1,12 @@
+name: First Action Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet person
+        run: echo "Hello ${{ github.actor }}"
+      - name: Cat OS Release
+        run: echo "You are running on $RUNNER_OS"
+      - name: Say Goodbye
+        run: echo "Goodbye ${{ github.actor }}"
