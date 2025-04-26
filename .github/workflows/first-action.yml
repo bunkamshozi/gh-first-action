@@ -7,6 +7,6 @@ jobs:
       - name: Greet person
         run: echo "Hello ${{ github.actor }}"
       - name: Cat OS Release
-        run: echo "You are running on $RUNNER_OS"
+        run: echo "You are running on ${{ runner.os }}"
       - name: Say Goodbye
         run: echo "Goodbye ${{ github.actor }}"
